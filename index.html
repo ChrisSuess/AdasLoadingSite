@@ -21,6 +21,28 @@
       <div class="text"></div>
     </div> <br>
 
+    <br>
+    <br>
+
+<table>
+    <tr><td>Text to Save:</td></tr>
+    <tr>
+        <td colspan="3">
+            <textarea id="inputTextToSave" cols="80" rows="5"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>Filename to Save As:</td>
+        <td><input id="inputFileNameToSaveAs"></input></td>
+        <td><button onclick="saveTextAsFile()">Save Text to File</button></td>
+    </tr>
+    <tr>
+        <td>Select a File to Load:</td>
+        <td><input type="file" id="fileToLoad"></td>
+        <td><button onclick="loadFileAsText()">Load Selected File</button><td>
+    </tr>
+</table>
+ 
     <script src="scripts/main.js"></script>
     <script src="scripts/scramble.js"></script>
 

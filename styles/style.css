@@ -69,3 +69,8 @@ body {
 .dud {
   color: #757575;
 }
+
+table {
+  margin: auto;
+  color: #fafafa;
+}
