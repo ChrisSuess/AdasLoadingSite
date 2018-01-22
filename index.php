@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <img src="images/ada.gif" width="200" height="200" alt="Artistic credit to Sydney Padua, Ada aficionado and author of the graphic novel: The Thrilling Adventures of Lovelace and Babbage.">
+    <img src="images/ada_nopipe_5.gif" width="200" height="200" alt="Artistic credit to Sydney Padua, Ada aficionado and author of the graphic novel: The Thrilling Adventures of Lovelace and Babbage.">
 
     <br>    
     <br>
