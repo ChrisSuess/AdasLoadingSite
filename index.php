@@ -12,14 +12,10 @@
 
     <br>
     <br>
-    <br>
-    <br>
 
     <div class="container">
       <div class="text"></div>
     </div> <br>
-
-    <br>
     <br>
 
 <?php
