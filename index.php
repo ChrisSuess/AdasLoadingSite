@@ -140,9 +140,9 @@
   </table>
 </form>
 
-
     <script src="scripts/main.js"></script>
     <script src="scripts/scramble.js"></script>
+    <script src="scripts/auto_text.js"></script>
 
  </body>
 </html>
