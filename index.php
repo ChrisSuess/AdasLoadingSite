@@ -5,13 +5,15 @@
     <title>Ada's Poetry Engine</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/newstyle.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
+	<br> <br>
+
     <img src="images/ada_nopipe_5.gif" width="300" height="300" alt="Artistic credit to Sydney Padua, Ada aficionado and author of the graphic novel: The Thrilling Adventures of Lovelace and Babbage.">
 
-    <br>
-    <br>
+	<br> <br>
 
     <div class="container">
       <div class="text"></div>
@@ -93,14 +95,14 @@
   }
 ?>
 
-<form id="poem">
+<form id="poemEnter">
   <table>
     <tr>
-      <td>Enter your poem here:</td>
+      <h4>Enter your poem here:</h4>
     </tr>
     <tr>
       <td colspan="2">
-        <textarea name="PoemTxt" cols="80" rows="5" maxlength="10000"><?php if( isset($poem) ) { print $poem; } ?></textarea>
+        <textarea id="poem" name="PoemTxt" cols="80" rows="5" maxlength="10000"><?php if( isset($poem) ) { print $poem; } ?></textarea>
       </td>
     </tr>
     <tr>
@@ -109,6 +111,10 @@
       </td>
       <td style="text-align:right">
         <button type="submit" name="run">Generate new poem</button>
+	<input type="button" onclick="PrintPoem()" value="Make my poem">
+        <input type="button" onclick="reShuffle()" value="Shuffle my poem">
+        <input type="button" onclick="promptNewInnerHtml()" value="Add New Text">
+        <button class="generate">Generate my poem</button> <input type="number" id="num-sentences" value="4" /> new lines
       </td>
     </tr>
   </table>
@@ -140,9 +146,25 @@
   </table>
 </form>
 
+    <h3 id="Pansh" class="spotted"></h3>
+
+   <!-- <h3 id="dev"></h3>-->
+
+    <h3 id="Shansh"></h3>
+
+    <h3 id="hidden"></h3>
+
+    <script>
+document.getElementById("hidden").style.display= "none"
+    </script>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/scramble.js"></script>
+    <script src="scripts/random_poem.js"></script>
+    <script src="scripts/clone.js"></script>
     <script src="scripts/auto_text.js"></script>
+    <script src="scripts/liking.js"></script>
 
  </body>
 </html>
