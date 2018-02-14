@@ -48,8 +48,7 @@ img {
 }
 
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-html,
-body {
+html, body {
   font-family: 'Roboto Mono', monospace;
   background: #212121; 
   height: 100%;

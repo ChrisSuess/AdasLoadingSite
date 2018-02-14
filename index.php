@@ -99,7 +99,7 @@
 <form id="poemEnter">
   <table>
     <tr>
-      <h4>Enter your poem here:</h4>
+      <p>Enter your poem here:</p>
     </tr>
     <tr>
       <td colspan="2">
@@ -108,14 +108,14 @@
     </tr>
     <tr>
       <td>
-        <button type="submit" name="save">Save</button>
+        <button type="submit" name="save">Save my poem</button>
       </td>
       <td style="text-align:right">
-        <button type="submit" name="run">Generate new poem</button>
+        <button type="submit" name="run">Create a new poem</button>
 	<input type="button" onclick="PrintPoem()" value="Make my poem">
         <input type="button" onclick="reShuffle()" value="Shuffle my poem">
         <input type="button" onclick="promptNewInnerHtml()" value="Add New Text">
-        <button class="generate">Generate my poem</button> <input type="number" id="num-sentences" value="4" /> new lines
+        <button class="generate">Generate a random poem</button> <input type="number" id="num-sentences" value="4" /> new lines
       </td>
     </tr>
   </table>

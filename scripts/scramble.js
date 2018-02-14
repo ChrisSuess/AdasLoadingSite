@@ -61,9 +61,10 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'Ada\'s Poetry Engine',
-  'Goes live on',
-  'February 16th 2018'
+  'Ada\'s Poetry Engine is live',
+  'WARNING: This engine can',
+  'seriously harm your poems',
+  'Rhyme Carefully.'
 ]
 
 const el = document.querySelector('.text')
