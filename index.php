@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Ada's Poetry Engine</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>-->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/newstyle.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
-	<br> <br>
+	<h1>Ada's Poetry Engine</h1>
+
+	<br>
 
     <img src="images/ada_nopipe_5.gif" width="300" height="300" alt="Artistic credit to Sydney Padua, Ada aficionado and author of the graphic novel: The Thrilling Adventures of Lovelace and Babbage.">
 
@@ -18,7 +20,6 @@
     <div class="container">
       <div class="text"></div>
     </div> <br>
-    <br>
 
 <?php
   // Define database settings
