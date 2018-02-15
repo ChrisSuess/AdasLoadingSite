@@ -261,8 +261,23 @@ function shuffle(array) {
       return false;
     };
 
-    this.shareFacebook = function(e) {
+    this.shareEmail = function(e) {
       e.preventDefault();
+
+      var newWords = self.htmlSelection;
+      var arrayWords = self.htmlSelection.replace(/ /g, '&');
+      arrayWords = "," + arrayWords;
+      poem = document.getElementById("hidden").textContent;
+
+      poem = poem.replace(newWords, " ");
+
+      addpoem = poem;//.concat(arrayWords).replace(/,/g, " ");//.replace(/\./g, " ");
+      addpoem = addpoem.split(" ");
+      shuffled = addpoem.sort(function(){return 0.5-Math.random()}).join(" ");
+
+      document.getElementById("hidden").innerHTML = shuffled;
+      document.getElementById("Pansh").innerHTML = shuffled.replace(/&/g, " ");
+
  //     var text = self.htmlSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
  //     var x = document.getElementById("poem").value;
  //     document.getElementById("Shansh").innerHTML = x;
@@ -283,7 +298,7 @@ function shuffle(array) {
        self.hide();
        return false;
      };
-
+/*
     this.shareEmail = function(e) {
       var text = self.htmlSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
       var email = {};
@@ -296,7 +311,7 @@ function shuffle(array) {
       self.hide();
       return true;
     };
-
+*/
     this.render = function() {
       var popoverHTML =  '<div class="selectionSharer" id="selectionSharerPopover" style="position:absolute;">'
                        + '  <div id="selectionSharerPopover-inner">'

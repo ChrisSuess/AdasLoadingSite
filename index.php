@@ -110,23 +110,21 @@
       <td>
         <button type="submit" name="save">Save my poem</button>
       </td>
-      <td style="text-align:right">
+      <td style="text-align:center">
         <button type="submit" name="run">Create a new poem</button>
 	<input type="button" onclick="PrintPoem()" value="Make my poem">
-        <input type="button" onclick="reShuffle()" value="Shuffle my poem">
+       <!-- <input type="button" onclick="reShuffle()" value="Shuffle my poem">
         <input type="button" onclick="promptNewInnerHtml()" value="Add New Text">
-        <button class="generate">Generate a random poem</button> <input type="number" id="num-sentences" value="4" /> new lines
+        <button class="generate">Generate a random poem</button> <input type="number" id="num-sentences" value="4" /> new lines-->
       </td>
     </tr>
   </table>
 </form>
 
-<button class="generate">Generate a random poem</button>
-
 <form id="load">
   <table>
     <tr>
-      <td>Retrieve your poem:</td>
+      <p>Retrieve your poem:</p>
     </tr>
     <tr>
       <td>
@@ -148,6 +146,13 @@
     </tr>
   </table>
 </form>
+
+        <p> Remix your poem: <br>
+	<input type="button" onclick="saveTextAsFile()" value="Save my new poem">
+        <input type="button" onclick="reShuffle()" value="Shuffle my poem">
+        <input type="button" onclick="promptNewInnerHtml()" value="Add new words to my poem">
+        <button class="generate">Generate a random poem</button> <input type="number" id="num-sentences" value="4" /> new lines
+        </p>
 
     <h3 id="Pansh" class="spotted"></h3>
 
