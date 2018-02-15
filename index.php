@@ -121,6 +121,8 @@
   </table>
 </form>
 
+<button class="generate">Generate a random poem</button>
+
 <form id="load">
   <table>
     <tr>

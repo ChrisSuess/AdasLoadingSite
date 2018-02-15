@@ -105,7 +105,7 @@ $(document).ready(function() {
   
   $('.generate').on('click', function() {
     var sentences = pg.generateSentences( $('#num-sentences').val(),  ' <br>' );
-    $('#poetry-content').html( sentences.join('') );
+    //$('#poetry-content').html( sentences.join('') );
     document.getElementById("poem").value = sentences;
     document.getElementById("Shansh").innerHTML = sentences;
     var y = document.getElementById('poem').value.split(" ").sort(function(){return 0.5-Math.random()}).join(" ");
