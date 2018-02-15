@@ -154,6 +154,12 @@
         <button class="generate">Generate a random poem</button> <input type="number" id="num-sentences" value="4" /> new lines
         </p>
 
+	<p>
+        <td>Save As:</td>
+        <td><input id="inputFileNameToSaveAs"></input></td>
+        <td><button onclick="saveTextAsFile()">Save my new poem</button></td>
+	</p>	
+
     <h3 id="Pansh" class="spotted"></h3>
 
    <!-- <h3 id="dev"></h3>-->

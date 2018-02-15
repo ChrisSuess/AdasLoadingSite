@@ -41,7 +41,7 @@ function drop(ev) {
                 }
 
 function saveTextAsFile() {
-    var textToSave = document.getElementById("Pansh").value;
+    var textToSave = document.getElementById("Pansh").textContent;
     var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
     var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
     var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
