@@ -148,7 +148,7 @@
 </form>
 
         <p> Remix your poem: <br>
-	<input type="button" onclick="saveTextAsFile()" value="Save my new poem">
+	<!--<input type="button" onclick="saveTextAsFile()" value="Save my new poem">-->
         <input type="button" onclick="reShuffle()" value="Shuffle my poem">
         <input type="button" onclick="promptNewInnerHtml()" value="Add new words to my poem">
         <button class="generate">Generate a random poem</button> <input type="number" id="num-sentences" value="4" /> new lines
