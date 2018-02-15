@@ -243,7 +243,7 @@ function shuffle(array) {
       shuffled = addpoem.sort(function(){return 0.5-Math.random()}).join(" ");
 
       document.getElementById("hidden").innerHTML = shuffled;
-      document.getElementById("Pansh").innerHTML = shuffled.replace(/&/g, " ");
+      document.getElementById("Pansh").innerHTML = shuffled.replace(/&/g, " ").replace(/\n/g, "<br>");;
   //    document.getElementById("dev").innerHTML = shuffled + "||" + arrayWords + "||" + newWords;
 
       //var text = "“"+self.smart_truncate(self.textSelection.trim(), 114)+"”";
@@ -276,7 +276,7 @@ function shuffle(array) {
       shuffled = addpoem.sort(function(){return 0.5-Math.random()}).join(" ");
 
       document.getElementById("hidden").innerHTML = shuffled;
-      document.getElementById("Pansh").innerHTML = shuffled.replace(/&/g, " ");
+      document.getElementById("Pansh").innerHTML = shuffled.replace(/&/g, " ").replace(/\n/g, "<br>");
 
  //     var text = self.htmlSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
  //     var x = document.getElementById("poem").value;

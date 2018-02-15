@@ -104,12 +104,12 @@ $(document).ready(function() {
   pg.init();
   
   $('.generate').on('click', function() {
-    var sentences = pg.generateSentences( $('#num-sentences').val(),  ' <br>' );
+    var sentences = pg.generateSentences( $('#num-sentences').val(),  ' \n' );
     //$('#poetry-content').html( sentences.join('') );
     document.getElementById("poem").value = sentences;
     document.getElementById("Shansh").innerHTML = sentences;
     var y = document.getElementById('poem').value.split(" ").sort(function(){return 0.5-Math.random()}).join(" ");
-            document.getElementById('Pansh').innerHTML = y;
+            document.getElementById('Pansh').innerHTML = y.replace(/\n/g, "<br>");
             document.getElementById('hidden').innerHTML = y;
     document.getElementById('Shansh').innerHTML = sentences.join(" ");
     document.getElementById("poem").style.display='none';

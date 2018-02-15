@@ -5,16 +5,18 @@ function PrintPoem() {
 		var x = document.getElementById("poem").value;
 		document.getElementById("Shansh").innerHTML = x.replace(/\n/g, "<br>");
 		var y = document.getElementById('poem').value.split(" ").sort(function(){return 0.5-Math.random()}).join(" ");
-		document.getElementById('Pansh').innerHTML = y;
+		document.getElementById('Pansh').innerHTML = y.replace(/\n/g, "<br>");
                 document.getElementById('hidden').innerHTML = y;
                 document.getElementById("poemEnter").style.display='none';
 		document.getElementById("load").style.display='none';
 }
 
 function reShuffle() {
-                var y = document.getElementById('hidden').textContent.split(" ").sort(function(){return 0.5-Math.random()}).join(" ");
-                ampMove = y.replace(/&/g, " ");
-                document.getElementById('Pansh').innerHTML = ampMove;
+                var y = document.getElementById('hidden').textContent.split(" ")
+		var y = y.sort(function(){return 0.5-Math.random()}).join(" ");
+                //var y = y.replace(/\n/g, "<br>");
+		ampMove = y.replace(/&/g, " ");
+                document.getElementById('Pansh').innerHTML = ampMove.replace(/\n/g, "<br>");
                 document.getElementById('hidden').innerHTML = y;
 }
 
@@ -23,7 +25,7 @@ function promptNewInnerHtml() {
                 var elem = document.getElementById("hidden").textContent;
                 var added = elem + " " + userText
 		document.getElementById("hidden").innerHTML = added;
-		document.getElementById("Pansh").innerHTML = added.replace(/&/g, " ");
+		document.getElementById("Pansh").innerHTML = added.replace(/&/g, " ").replace(/\n/g, "<br>");
 }
 
 function allowDrop(ev) {
